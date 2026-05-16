@@ -16,16 +16,27 @@
         <h2>Welcome to the Form Validation!</h2>
         <p>This tool allows you to validate your form inputs for various insights. Please fill out the form below to get
             started.</p>
-        <form action="" method="">
-            <br> Name: <input type="text" id="name" name="name" placeholder="Enter your name">
-            <br> Last Name: <input type="text" id="lname" name="lname" placeholder="Enter your last name">
-            <br> Phone Number: <input type="number" id="phone" name="phone" placeholder="Enter your phone number">
-            <br> Email: <input type="email" id="email" name="email" placeholder="Enter your email">
-            <br> Password: <input type="password" id="password" name="password" placeholder="Enter your password">
+        <form id="form" action="" method="">
+            <p id="message"></p>
+            <br> <Label for="name">Name:</Label> 
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <br> <Label for="lname">Last Name:</Label> <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+            <br> <Label for="phone">Phone Number:</Label> <input type="number" id="phone" name="phone" placeholder="Enter your phone number">
+            <br> <Label for="email">Email:</Label> <input type="email" id="email" name="email" placeholder="Enter your email">
+            <br> <Label for="password">Password:</Label> <input type="password" id="password" name="password" placeholder="Enter your password">
             <br> <button type="submit" value="Submit">Submit</button>
+            <div id="loginReset">
+                <br> <button type="reset" value="Reset">Reset</button>
+                <br> <button type="Login" value="Validate">Login</button>
+            </div>
         </form>
     </div>
-
+    <footer>
+        <p>&copy; 2026 Form Validation. All rights reserved.</p>
+        <p>Made by Benzz.<a href="https://example.com" target="_blank">Form validity</a></p>
+    </footer>
+    
+    <script src="./index.js"></script>
 </body>
 
 </html>

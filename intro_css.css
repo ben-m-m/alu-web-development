@@ -16,7 +16,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(107, 90, 238);
+    background-color: rgb(148, 135, 243);
     padding: 20px;
     border-radius: 10px;
     font-size: 20px;
@@ -28,12 +28,30 @@ div {
 
 }
 
+#loginReset {
+    display: flex;
+    gap: 40px;
+    background-color: rgb(107, 90, 238);
+    padding-top: 1px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    padding-right: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
 body {
     background-color: #6faaf1;
     font-family: Arial, sans-serif;
     align-self: center;
     margin: 0;
     padding: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
 }
 
 input {
@@ -63,6 +81,25 @@ button[type="submit"]:active {
     background-color: purple;
 }
 
+button[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.8s ease;
+}
+
+button[type="reset"]:active {
+    background-color: purple;
+}
+
+button[type="login"] {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.8s ease;
+}
+
+button[type="login"]:active {
+    background-color: purple;
+}
 
 /* br{
     margin-bottom: 10px;
