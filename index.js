@@ -9,6 +9,7 @@ form.addEventListener('submit', function (event) {
     const phone = document.getElementById('phone').value.trim();
     const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value.trim();
+    const age = document.getElementById('age').value.trim();
 
     if (!name || !lname || !phone || !email || !password) {
         message.textContent = 'Please fill out all fields.';
@@ -26,6 +27,17 @@ form.addEventListener('submit', function (event) {
         message.textContent = 'Please enter a valid email address.';
         message.style.color = 'red';
         return;
+    }
+
+    if (age) {
+        const birthDate = new Date(age);
+        const today = new Date();
+        const ageDiff = today.getFullYear() - birthDate.getFullYear();
+        if (ageDiff < 18 || (ageDiff === 18 && today < new Date(birthDate.setFullYear(birthDate.getFullYear() + 18)))) {
+            message.textContent = 'You must be at least 18 years old to register.';
+            message.style.color = 'red';
+            return;
+        }
     }
 
     if (password.length < 12) {
