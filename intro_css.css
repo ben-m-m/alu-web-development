@@ -74,7 +74,7 @@ button {
 button[type="submit"] {
     background-color: #4CAF50;
     color: white;
-    transition: background-color 0.8s ease;
+    transition: background-color 1.0s ease;
 }
 
 button[type="submit"]:active {
@@ -84,7 +84,7 @@ button[type="submit"]:active {
 button[type="reset"] {
     background-color: #4CAF50;
     color: white;
-    transition: background-color 0.8s ease;
+    transition: background-color 1.0s ease;
 }
 
 button[type="reset"]:active {
@@ -94,7 +94,7 @@ button[type="reset"]:active {
 button[type="login"] {
     background-color: #4CAF50;
     color: white;
-    transition: background-color 0.8s ease;
+    transition: background-color 1.0s ease;
 }
 
 button[type="login"]:active {
