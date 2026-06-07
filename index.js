@@ -49,3 +49,10 @@ form.addEventListener('submit', function (event) {
     message.textContent = 'Form submitted successfully!';
     message.style.color = 'green';
 }); 
+
+Element	Color
+Background	#0B1020
+Secondary Gradient	#1E293B
+Accent 1	#00E5FF
+Accent 2	#00FF88
+Text	#FFFFFF
